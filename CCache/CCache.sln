@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCache.Web.API", "CCache.Web.API\CCache.Web.API.csproj", "{522496E1-F7CF-4C30-922A-2AC63DBBF712}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCache.Data.DataAccess", "CCache.Data.DataAccess\CCache.Data.DataAccess.csproj", "{EF46CB8A-E431-44DC-B3B5-B207A9AFCE78}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCache.Data.Entities", "CCache.Data.Entities\CCache.Data.Entities.csproj", "{E59C5585-C74C-4678-9A82-BDEFFE78781E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCache.GraphQL.Queries", "CCache.GraphQL.Queries\CCache.GraphQL.Queries.csproj", "{70ECA3D0-57A0-4F60-9CB3-0D1FFA1CFD28}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCache.GraphQL.Entities", "CCache.GraphQL.Entities\CCache.GraphQL.Entities.csproj", "{E8F6941B-F580-44AF-A514-9F1B1F48DC2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCache.GraphQL.Mutations", "CCache.GraphQL.Mutations\CCache.GraphQL.Mutations.csproj", "{1E469241-206B-466B-85A6-B7AD21F76F8C}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{522496E1-F7CF-4C30-922A-2AC63DBBF712}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{522496E1-F7CF-4C30-922A-2AC63DBBF712}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{522496E1-F7CF-4C30-922A-2AC63DBBF712}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{522496E1-F7CF-4C30-922A-2AC63DBBF712}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EF46CB8A-E431-44DC-B3B5-B207A9AFCE78}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EF46CB8A-E431-44DC-B3B5-B207A9AFCE78}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EF46CB8A-E431-44DC-B3B5-B207A9AFCE78}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EF46CB8A-E431-44DC-B3B5-B207A9AFCE78}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E59C5585-C74C-4678-9A82-BDEFFE78781E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E59C5585-C74C-4678-9A82-BDEFFE78781E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E59C5585-C74C-4678-9A82-BDEFFE78781E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E59C5585-C74C-4678-9A82-BDEFFE78781E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{70ECA3D0-57A0-4F60-9CB3-0D1FFA1CFD28}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{70ECA3D0-57A0-4F60-9CB3-0D1FFA1CFD28}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{70ECA3D0-57A0-4F60-9CB3-0D1FFA1CFD28}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{70ECA3D0-57A0-4F60-9CB3-0D1FFA1CFD28}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E8F6941B-F580-44AF-A514-9F1B1F48DC2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E8F6941B-F580-44AF-A514-9F1B1F48DC2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E8F6941B-F580-44AF-A514-9F1B1F48DC2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E8F6941B-F580-44AF-A514-9F1B1F48DC2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1E469241-206B-466B-85A6-B7AD21F76F8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1E469241-206B-466B-85A6-B7AD21F76F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1E469241-206B-466B-85A6-B7AD21F76F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1E469241-206B-466B-85A6-B7AD21F76F8C}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal
