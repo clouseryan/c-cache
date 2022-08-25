@@ -16,6 +16,7 @@
     <ItemGroup>
       <ProjectReference Include="..\CCache.GraphQL.Mutations\CCache.GraphQL.Mutations.csproj" />
       <ProjectReference Include="..\CCache.GraphQL.Queries\CCache.GraphQL.Queries.csproj" />
+      <ProjectReference Include="..\CCache.GraphQL.Subscriptions\CCache.GraphQL.Subscriptions.csproj" />
     </ItemGroup>
 
 </Project>

@@ -35,8 +35,9 @@ public class CacheDb : IDisposable
     /// </summary>
     /// <param name="collectionName"></param>
     /// <returns></returns>
-    public IEnumerable<CachableEntity> GetMany(string collectionName)
-        => GetCollection(collectionName).FindAll();
+    public IEnumerable<T> GetMany<T>(string collectionName) where T : CachableEntity
+        => GetCollection(collectionName).FindAll().Cast<T>();
+
 
     /// <summary>
     /// Upsert object in a given collection with a given key.

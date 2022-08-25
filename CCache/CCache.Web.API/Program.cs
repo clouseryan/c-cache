@@ -2,6 +2,7 @@ using CCache.Data.DataAccess;
 using CCache.GraphQL.Mutations.MutationTypes;
 using CCache.GraphQL.Queries.Queries;
 using CCache.GraphQL.Queries.QueryTypes;
+using CCache.GraphQL.Subscriptions.SubscriptionTypes;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -9,11 +10,13 @@ var builder = WebApplication.CreateBuilder(args);
 
 builder.Services.Configure<CacheDbSettings>(builder.Configuration.GetSection("CacheDbSettings"));
 builder.Services.AddScoped<CacheDb>();
-builder.Services.AddScoped<PokemonQuery>();
+
+builder.Services.AddInMemorySubscriptions();
 
 builder.Services.AddGraphQLServer()
     .AddQueryType<PokemonQueryType>()
-    .AddMutationType<PokemonMutationType>();
+    .AddMutationType<PokemonMutationType>()
+    .AddSubscriptionType<PokemonUpsertSubscriptionType>();
 
 builder.Services.AddControllers();
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
@@ -31,10 +34,16 @@ if (app.Environment.IsDevelopment())
 
 app.UseHttpsRedirection();
 
-app.UseAuthorization();
+// app.UseAuthorization();
 
 app.MapControllers();
 
-app.MapGraphQL();
+app.UseRouting();
+app.UseWebSockets();
+
+app.UseEndpoints(endpoints =>
+{
+    endpoints.MapGraphQL();
+});
 
 app.Run();

@@ -12,6 +12,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCache.GraphQL.Entities", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCache.GraphQL.Mutations", "CCache.GraphQL.Mutations\CCache.GraphQL.Mutations.csproj", "{1E469241-206B-466B-85A6-B7AD21F76F8C}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CCache.GraphQL.Subscriptions", "CCache.GraphQL.Subscriptions\CCache.GraphQL.Subscriptions.csproj", "{4EE3D74D-CAD0-4CFE-8FCB-235316C0B9C1}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,5 +44,9 @@ Global
 		{1E469241-206B-466B-85A6-B7AD21F76F8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1E469241-206B-466B-85A6-B7AD21F76F8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1E469241-206B-466B-85A6-B7AD21F76F8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4EE3D74D-CAD0-4CFE-8FCB-235316C0B9C1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4EE3D74D-CAD0-4CFE-8FCB-235316C0B9C1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4EE3D74D-CAD0-4CFE-8FCB-235316C0B9C1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4EE3D74D-CAD0-4CFE-8FCB-235316C0B9C1}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 EndGlobal

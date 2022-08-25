@@ -15,7 +15,7 @@ public class PokemonQuery
 
     public IEnumerable<Pokemon>? GetAllPokemon()
     {
-        return _cacheDb.GetMany("pokemonAll").ToList() as IEnumerable<Pokemon>;
+        return _cacheDb.GetMany<Pokemon>("pokemon");
     }
 
     public Pokemon? GetPokemonByKey(int key)

@@ -10,9 +10,9 @@ public class PokemonMutationType : ObjectType<PokemonMutation>
         
         
         descriptor.Name("addPokemonWithKey")
-            .Field(f => f.AddPokemonWithKey(default));
+            .Field( f => f.AddPokemonWithKeyAsync(default, default));
         
         descriptor.Name("addPokemonWithNoKey")
-            .Field(f => f.AddPokemonWithNoKey(default));
+            .Field(f => f.AddPokemonWithNoKeyAsync(default, default));
     }
 }
