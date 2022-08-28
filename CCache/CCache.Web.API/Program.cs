@@ -8,6 +8,9 @@ var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
+// Todo - implement with Dashboard MovesRepositoryCached
+//         implement with Dashboard Application
+
 builder.Services.Configure<CacheDbSettings>(builder.Configuration.GetSection("CacheDbSettings"));
 builder.Services.AddScoped<CacheDb>();
 

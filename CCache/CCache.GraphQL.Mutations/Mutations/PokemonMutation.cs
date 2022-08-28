@@ -24,7 +24,7 @@ public class PokemonMutation
     
     public async Task<Pokemon> AddPokemonWithNoKeyAsync(Pokemon pokemon, [Service] ITopicEventSender sender)
     {
-        _cacheDb.UpsertWithoutKey("pokemonAll", pokemon);
+        _cacheDb.UpsertWithoutKey("pokemon", pokemon);
         await sender.SendAsync("pokemonUpsert", pokemon);
         return pokemon;
     }

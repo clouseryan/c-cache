@@ -22,5 +22,4 @@ public class PokemonQuery
     {
         return _cacheDb.GetSingleOrNull("pokemon", new BsonValue(key)) as Pokemon;
     }
-      
 }

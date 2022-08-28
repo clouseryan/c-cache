@@ -1,4 +1,5 @@
-﻿using CCache.Data.Entities.Abstraction;
+﻿using System.Globalization;
+using CCache.Data.Entities.Abstraction;
 using LiteDB;
 using Microsoft.Extensions.Options;
 
@@ -13,6 +14,12 @@ public class CacheDb : IDisposable
     {
         _settings = settings?.Value ?? throw new ArgumentNullException(nameof(settings));
         _db = new LiteDatabase(_settings.ConnectionString);
+        Init();
+    }
+
+    private void Init()
+    {
+        // todo: create indexes
     }
 
     public IEnumerable<string> GetCollectionNames()
